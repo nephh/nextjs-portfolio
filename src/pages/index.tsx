@@ -8,7 +8,7 @@ import { FloatingNav } from "@/components/ui/navbar";
 function ProjectSection() {
   return (
     <div className="flex h-screen items-center justify-center">
-      <div className="flex flex-col items-center justify-center 2xl:grid 2xl:grid-cols-2 2xl:gap-4">
+      <div className="flex w-10/12 flex-col items-center justify-center 2xl:grid 2xl:grid-cols-2 2xl:gap-4">
         {projects.map((project, index) => {
           return (
             <Project
@@ -105,16 +105,16 @@ export default function Home() {
 
   const navItems = [
     {
-      name: "Home",
-      link: "/",
+      name: "Projects",
+      link: "/#projects",
     },
     {
       name: "About",
-      link: "/about",
+      link: "/#about",
     },
     {
       name: "Contact",
-      link: "/contact",
+      link: "/#contact",
     },
   ];
 
