@@ -104,9 +104,6 @@ function Contact() {
         method="POST"
         className="flex w-full flex-col md:w-7/12"
       >
-        <div className="flex justify-center">
-          <h2 className="mb-2 text-lg font-semibold">Want to reach out?</h2>
-        </div>
         <input
           type="text"
           name="name"
@@ -126,11 +123,9 @@ function Contact() {
           className="mb-4 resize-none rounded-md border-2 bg-transparent p-2 focus:outline-none dark:border-slate-800"
         />
         <div className="flex justify-center">
-          <button
-            type="button"
-            className="bgsize inline-block w-max transform rounded-md bg-gradient-to-br from-slate-600 to-slate-800 px-8 py-3 text-center text-base font-medium text-white drop-shadow-md transition-all duration-300 hover:scale-105"
-          >
-            Work With Me
+          <button className="relative rounded-full border border-slate-600 bg-slate-700 px-8 py-3 text-sm text-white transition duration-200 hover:shadow-2xl hover:shadow-white/[0.1]">
+            <div className="absolute inset-x-0 -top-px mx-auto h-px w-1/2 bg-gradient-to-r from-transparent via-blue-500 to-transparent shadow-2xl" />
+            <span className="relative z-20">Work With Me</span>
           </button>
         </div>
       </form>
