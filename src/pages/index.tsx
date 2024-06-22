@@ -90,6 +90,54 @@ function Landing() {
   );
 }
 
+function Contact() {
+  return (
+    <div className="flex h-screen flex-col items-center justify-center">
+      <h2>Contact Me</h2>
+      <hr className="my-6 w-4/12 border opacity-25" />
+      <p className="about w-8/12 text-2xl leading-8">
+        I am currently looking for work as a junior developer. If you would like
+        to reach out to me, please feel free to contact me!
+      </p>
+      <form
+        action="https://getform.io/f/cd4f83e1-8382-47db-8cbe-59ec62a25dc0"
+        method="POST"
+        className="flex w-full flex-col md:w-7/12"
+      >
+        <div className="flex justify-center">
+          <h2 className="mb-2 text-lg font-semibold">Want to reach out?</h2>
+        </div>
+        <input
+          type="text"
+          name="name"
+          placeholder="Name..."
+          className="rounded-md border-2 bg-transparent p-2 focus:outline-none dark:border-slate-800"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="E-mail..."
+          className="my-2 rounded-md border-2 bg-transparent p-2 focus:outline-none dark:border-slate-800"
+        />
+        <textarea
+          name="message"
+          placeholder="Message..."
+          rows={10}
+          className="mb-4 resize-none rounded-md border-2 bg-transparent p-2 focus:outline-none dark:border-slate-800"
+        />
+        <div className="flex justify-center">
+          <button
+            type="button"
+            className="bgsize inline-block w-max transform rounded-md bg-gradient-to-br from-slate-600 to-slate-800 px-8 py-3 text-center text-base font-medium text-white drop-shadow-md transition-all duration-300 hover:scale-105"
+          >
+            Work With Me
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+}
+
 export default function Home() {
   useEffect(() => {
     const hash = window.location.hash.substring(1);
@@ -134,6 +182,9 @@ export default function Home() {
           </Element>
           <Element name="about">
             <About />
+          </Element>
+          <Element name="contact">
+            <Contact />
           </Element>
         </div>
       </main>
