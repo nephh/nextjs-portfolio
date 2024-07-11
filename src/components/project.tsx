@@ -19,31 +19,33 @@ export default function Project({
   imgUrl,
 }: ProjectData) {
   return (
-    <div className="flex overflow-hidden rounded-md border-2 border-slate-300 p-6">
-      <div className="flex w-full flex-row space-x-12">
-        <div className="flex justify-center items-center">
-          <Image
-            src={imgUrl}
-            alt="project"
-            width={600}
-            height={600}
-            className="z-1"
-          />
-        </div>
-        <div className="flex w-11/12 flex-col">
-          <div className="flex flex-row items-center justify-between text-center">
-            <p className="text-2xl font-bold">
-              <a href={url}>{title}</a>
+    <div className="flex overflow-hidden p-6 h-[250px] w-9/12 bg-opacity-60 rounded-md border-2 lg:w-full bg-bg-pattern border-zinc-300">
+      <div className="flex flex-col gap-8 w-full md:flex-row">
+        <Image
+          src={imgUrl}
+          alt="project"
+          width={230}
+          height={230}
+          className="object-contain"
+        />
+        <div className="flex flex-col justify-between w-full">
+          <div>
+            <div className="flex flex-row justify-between items-center text-center">
+              <p className="text-2xl font-bold">
+                <a href={url}>{title}</a>
+              </p>
+              <p className="text-lg font-bold">{date}</p>
+            </div>
+            <p className="pt-4 font-semibold font-md text-start">
+              {description}
             </p>
-            <p className="text-lg font-bold">{date}</p>
           </div>
-          <p className="font-md text-start font-semibold">{description}</p>
-          <div className="mt-[158px] flex justify-center">
+          <div className="flex flex-wrap gap-2 justify-center w-full">
             {tools.map((item, index) => {
               return (
                 <span
                   key={index}
-                  className="mx-2 rounded-md border border-slate-300 p-2 px-4"
+                  className="p-2 px-4 text-sm rounded-md border border-zinc-300"
                 >
                   {item}
                 </span>
@@ -52,7 +54,7 @@ export default function Project({
           </div>
         </div>
       </div>
-      <Meteors number={20} className="relative" />
+      {/* <Meteors number={20} className="relative -z-10" /> */}
     </div>
   );
 }
