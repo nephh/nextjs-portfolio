@@ -3,10 +3,10 @@ export default [
   {
     title: "ChatSpace",
     description:
-      "Real-time chat application, with rooms and user authentication.",
+      "Real-time chat application, with rooms and user authentication. A group project where I was responsible for all of the backend and a few frontend features",
     tools: ["Socket.io", "JavaScript", "Tailwind"],
     date: 2023,
-    url: "localhost:5273",
+    url: "https://github.com/RickiBobbii/ChatSpace",
     imgUrl: "/chatspace.png",
   },
   {
@@ -24,7 +24,7 @@ export default [
       "CLI tool made to simplify JSON creation, tailored for mock data creation.",
     tools: ["TypeScript", "Gemini AI"],
     date: 2023,
-    url: "localhost:5273",
+    url: "https://github.com/nephh/ez-json",
     imgUrl: "/ezjson.png",
   },
   {
@@ -33,7 +33,7 @@ export default [
       "Web application to visualize sorting algorithms, with adjustable speed and multiple algorithms.",
     tools: ["Next.JS", "Tailwind"],
     date: 2023,
-    url: "localhost:5273",
+    url: "https://algo-visualizer-v1.vercel.app/",
     imgUrl: "/algo.png",
   },
 ];
