@@ -7,25 +7,45 @@ import { FloatingNav } from "@/components/ui/navbar";
 
 function ProjectSection() {
   return (
-    <div className="flex justify-center items-center xl:h-screen">
-      <div className="flex flex-col justify-center items-center mx-8 xl:grid xl:grid-cols-2 xl:gap-4">
-        {projects.map((project, index) => {
-          return (
-            <Project
-              key={index}
-              title={project.title}
-              description={project.description}
-              tools={project.tools}
-              date={project.date}
-              url={project.url}
-              imgUrl={project.imgUrl}
-            />
-          );
-        })}
-      </div>
+    <div className="grid gap-8">
+      {projects.map((project, index) => {
+        return (
+          <Project
+            key={index}
+            title={project.title}
+            description={project.description}
+            tools={project.tools}
+            date={project.date}
+            url={project.url}
+            imgUrl={project.imgUrl}
+          />
+        );
+      })}
     </div>
   );
 }
+
+// function ProjectSection() {
+//   return (
+//     <div className="flex justify-center items-center xl:h-screen">
+//       <div className="flex flex-col justify-center items-center mx-8 xl:grid xl:grid-cols-2 xl:gap-4">
+//         {projects.map((project, index) => {
+//           return (
+//             <Project
+//               key={index}
+//               title={project.title}
+//               description={project.description}
+//               tools={project.tools}
+//               date={project.date}
+//               url={project.url}
+//               imgUrl={project.imgUrl}
+//             />
+//           );
+//         })}
+//       </div>
+//     </div>
+//   );
+// }
 
 function About() {
   return (
@@ -123,8 +143,8 @@ function Contact() {
           className="p-2 mb-4 bg-transparent rounded-md border-2 border-opacity-50 resize-none focus:outline-none border-zinc-600"
         />
         <div className="flex justify-center">
-          <button className="relative py-3 px-8 text-sm text-white rounded-full border transition duration-200 hover:shadow-2xl border-zinc-600 bg-zinc-600 bg-opacity-60 hover:shadow-white/[0.1]">
-            <div className="absolute inset-x-0 -top-px mx-auto w-1/2 h-px bg-gradient-to-r from-transparent via-zinc-200 to-transparent shadow-2xl" />
+          <button className="relative py-3 px-8 text-sm text-white bg-opacity-60 rounded-full border transition duration-200 hover:shadow-2xl border-zinc-600 bg-zinc-600 hover:shadow-white/[0.1]">
+            <div className="absolute inset-x-0 -top-px mx-auto w-1/2 h-px bg-gradient-to-r from-transparent to-transparent shadow-2xl via-zinc-200" />
             <span className="relative z-20">Work With Me</span>
           </button>
         </div>
