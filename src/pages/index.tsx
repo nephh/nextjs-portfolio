@@ -189,7 +189,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col justify-center items-center text-center text-md text-slate-200">
-        <FloatingNav navItems={navItems} className="md:hidden" />
+        <FloatingNav navItems={navItems} className="invisible md:visible" />
         <div className="w-full">
           <Landing />
           <Element name="projects">
