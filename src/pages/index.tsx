@@ -123,8 +123,8 @@ function Contact() {
           className="p-2 mb-4 bg-transparent rounded-md border-2 border-opacity-50 resize-none focus:outline-none border-zinc-600"
         />
         <div className="flex justify-center">
-          <button className="relative py-3 px-8 text-sm text-white rounded-full border transition duration-200 hover:shadow-2xl border-zinc-600 bg-zinc-600 bg-opacity-60 hover:shadow-white/[0.1]">
-            <div className="absolute inset-x-0 -top-px mx-auto w-1/2 h-px bg-gradient-to-r from-transparent via-zinc-200 to-transparent shadow-2xl" />
+          <button className="relative py-3 px-8 text-sm text-white bg-opacity-60 rounded-full border transition duration-200 hover:shadow-2xl border-zinc-600 bg-zinc-600 hover:shadow-white/[0.1]">
+            <div className="absolute inset-x-0 -top-px mx-auto w-1/2 h-px bg-gradient-to-r from-transparent to-transparent shadow-2xl via-zinc-200" />
             <span className="relative z-20">Work With Me</span>
           </button>
         </div>
@@ -169,7 +169,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col justify-center items-center text-center text-md text-slate-200">
-        <FloatingNav navItems={navItems} className="md:hidden" />
+        <FloatingNav navItems={navItems} className="invisible md:visible" />
         <div className="w-full">
           <Landing />
           <Element name="projects">
